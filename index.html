@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculater</title>
+    <link rel="stylesheet" href="dom3.css">
+</head>
+<body>
+    <div class="main-container">
+        <h1 style="margin-bottom: 20px;">calculater</h1>
+        <div class="calculator">
+            <div>
+                <input type="text" placeholder="0" class="screen" id="result" readonly>
+            </div>
+            <div class="buttons">
+                <button onclick="buttonclear()"  class="btn" style="background-color: rgb(220, 19, 19); margin-top: 15px;">AC</button>
+                <button onclick="removeLastDigit()"  class="btn" style="float: right; margin-right: 20px; font-size: 14px;color: black; margin-top: 15px;">&#9003</button>
+                <div class="row">
+                    <button onclick="displayContent('7')" class="btn">7</button>
+                    <button onclick="displayContent('8')" class="btn">8</button>
+                    <button onclick="displayContent('9')" class="btn">9</button>
+                    <button onclick="displayContent('/')" class="btn">/</button>
+                </div>
+                <div class="row">
+                    <button onclick="displayContent('4')" class="btn">4</button>
+                    <button onclick="displayContent('5')" class="btn">5</button>
+                    <button onclick="displayContent('6')" class="btn">6</button>
+                    <button onclick="displayContent('*')" class="btn">x</button>
+                </div>
+                <div class="row">
+                    <button onclick="displayContent('1')" class="btn">1</button>
+                    <button onclick="displayContent('2')" class="btn">2</button>
+                    <button onclick="displayContent('3')" class="btn">3</button>
+                    <button onclick="displayContent('-')" class="btn">-</button>
+                </div>
+                <div class="row">
+                    <button onclick="displayContent('.')" class="btn">.</button>
+                    <button onclick="displayContent('0')" class="btn">0</button>
+                    <button onclick="displayContent('+')" class="btn">+</button>
+                    <button onclick="calacOutput()" style="background-color: green ;"  class="btn">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="./dom3.js">
+        
+</script>
+</html>
